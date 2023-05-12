@@ -60,17 +60,125 @@ nav a:hover {
       position: relative;
       top: -40px;
     }
-    .shopping-button {
-      background-color: yellow;
-      color: black;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      position: relative;
-            top: -20px;
-    }
+    .shopping-button{
+                display: inline-block;
+                outline: 0;
+                border:0;
+                cursor: pointer;
+                text-decoration: none;
+                position: relative;
+                color: #000;
+                background: #fff;
+                line-height: 10px;
+                border-radius: 40px;
+                padding: 20px;
+                font-size: 20px;
+                font-weight: 600;
+                box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+                transition: all 0.2s;
+                :hover{
+                    box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+                    transform: scale(1.01);
+                }
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
 
-    .shopping-button i {
-      margin-right: 5px
-    }
+.rating input {
+  display: none;
+}
+
+.rating label {
+  color: #ddd;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.rating label:before {
+  content: "\2605";
+}
+
+.rating label:hover,
+.rating input:checked ~ label,
+.rating input:checked ~ label ~ label {
+  color: #ffbf00;
+}
+
+.comment-form {
+  margin-bottom: 1rem;
+}
+
+.comment-form input[type="text"],
+.comment-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.comment-form input[type="text"]:focus,
+.comment-form textarea:focus {
+  outline: none;
+  border-color: #888;
+}
+
+.comment-form textarea {
+  resize: vertical;
+}
+
+.comment-form input[type="submit"] {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.username {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.comment {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  color: #ddd;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.rating label:before {
+  content: "\2605";
+}
+
+.rating label:hover,
+.rating input:checked ~ label,
+.rating input:checked ~ label ~ label
+

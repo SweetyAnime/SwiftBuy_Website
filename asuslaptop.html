@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Asus Vivobook 15 Core</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
 <header>
     <nav style="text-align: center">
         <div  class="rectangle-box">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="Main_Webpage.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Contact</a></li>
@@ -22,7 +23,7 @@
 
 </header>
 </body>
-<img src="../../Downloads/asusicon.jpg" class="left-align" height="400" width="400" alt="Asus Vivobook 15 Core"/>
+<img src="../../Downloads/asusicon.webp" class="left-align" height="400" width="400" alt="Asus Vivobook 15 Core"/>
 <div class="rating">
     <span style="color:yellow;font-size: 20px" class="star">&#9733;</span>
     <span style="color:yellow;font-size: 20px" class="star">&#9733;</span>
@@ -32,14 +33,13 @@
 </div>
 
 <h4 style="color:#808080;top: -20px" class="word-2">4.3 Star:1,349 Ratings & 126 Reviews</h4>
-<p style="font-size: 30px;top: -35px;" class=word-2><s>50,990</s><b>38,990rs</b><p2 style="color:purple;font-size: 15px;"> 23% off</p2></p>
+<p style="font-size: 30px;top: -35px;" class=word-2><s>&#8377 50,990</s><b>&#8377 38,990</b><p2 style="color:purple;font-size: 15px;"> 23% off</p2></p>
 <p class="word-3">Available offers:</p>
 <p class="word-3">Bank OfferFlat ₹1250 Discount on HDFC Bank Credit Card EMI Transactions on orders of ₹15,000 and aboveT&C</p>
 <p class="word-3">Bank OfferFlat ₹4000 Discount on HDFC Bank Credit Card EMI Transactions on orders of ₹50,000 and aboveT&C</p>
-<p class="word-3">Bank Offer 5% Cashback on Flipkart Axis Bank CardT&C</p>
+<p class="word-3">Bank Offer 5% Cashback on Axis Bank CardT&C</p>
 
 <button class="shopping-button">
-    <img src="../../Downloads/basket-cart-icon.png" height="15" width="15" alt="cart_icon"/>
     <i class="fas fa-shopping-cart"></i> Buy Now
 </button><br><br>
 
@@ -122,45 +122,25 @@
 <p style="color:orange;font-size:13px">Domestic Warranty  :  <p2 style="color:black">1 Year</p2></p>
 
 <p style="color:grey;font-size:20px">Ratings And Feedback</p>
-<
+<div class="rating">
+    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"></label>
+</div>
+
+<div class="comment-form">
+    <label for="username"></label><input type="text" id="username" placeholder="Username" required>
+    <br>
+    <label for="comment"></label><textarea id="comment" placeholder="Comment" rows="5" required></textarea>
+    <br>
+    <input type="submit" value="Submit" onclick="submitForm()">
+</div>
+<p style="color:Green;font-size:20px">Check Out The Users Ratings And Comments</p>
+<div id="feedback"></div>
 
 
-
-<p style="color:orange;font-size:13px">  :  <p2 style="color:black"></p2></p>
-<p style="color:orange;font-size:13px">  :  <p2 style="color:black"></p2></p>
-<p style="color:orange;font-size:13px">  :  <p2 style="color:black"></p2></p>
-<p style="color:orange;font-size:13px">  :  <p2 style="color:black"></p2></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="javascript.js"></script>
 
 </html>

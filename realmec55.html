@@ -10,7 +10,7 @@
   <nav style="text-align: center">
     <div  class="rectangle-box">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="Main_Webpage.html">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Contact</a></li>
@@ -32,14 +32,13 @@
 </div>
 
 <h4 style="color:#808080;top: -20px" class="word-2">4.4 Star:5,878 Ratings & 348 Reviews</h4>
-<p style="font-size: 30px;top: -35px;" class=word-2><s>15,999rs</s><b>13,999rs</b><p2 style="color:purple;font-size: 15px;"> 12% off</p2></p>
+<p style="font-size: 30px;top: -35px;" class=word-2><s>&#8377 15,999</s><b>&#8377 13,999</b><p2 style="color:purple;font-size: 15px;"> 12% off</p2></p>
 <p class="word-3">Available offers:</p>
-<p class="word-3">Bank Offer5% Cashback on Flipkart Axis Bank CardT&C</p>
+<p class="word-3">Bank Offer5% Cashback on Axis Bank CardT&C</p>
 <p class="word-3">Special PriceGet extra ₹2000 off (price inclusive of cashback/coupon)T&C</p>
 <p class="word-3">FreebieGet 200% Welcome Bonus upto ₹10000*T&C</p>
 
 <button class="shopping-button">
-  <img src="../../Downloads/basket-cart-icon.png" height="15" width="15" alt="cart_icon"/>
   <i class="fas fa-shopping-cart"></i> Buy Now
 </button><br><br><br><br>
 
@@ -95,13 +94,13 @@
 <p style="color:orange;font-size:13px">Secondary Camera Features  :  <p2 style="color:black">8MP Front Camera Setup: (SmartSens SC800CS, f/2.0 Aperture, FOV: 78.1 Degree, 1/4 inch Sensor Size, 1.12um Pixel SIze, 5P Lens, CMOS, Fixed Focus), Camera Feature: Photo, Beauty, Filter, Night Mode, Panoramic View, Portrait Mode, HDR, AI Scene Recognition</p2></p>
 <p style="color:orange;font-size:13px">Flash  :  <p2 style="color:black">Rear: Single Flash | Front: Screen Flash</p2></p>
 <p style="color:orange;font-size:13px">Hardware Interface  :  <p2 style="color:black">PCIe NVMe M.2</p2></p>
-style="color:orange;font-size:13px">HD Recording  :  <p2 style="color:black">Yes</p2></html>
-style="color:orange;font-size:13px">Full HD Recording  :  <p2 style="color:black">Yes</p2>
-style="color:orange;font-size:13px">Video Recording  :  <p2 style="color:black">Yes</p2>
-style="color:orange;font-size:13px">Video Recording Resolution  :  <p2 style="color:black">Rear Camera: 720p (at 30 fps/60 fps/ 120 fps), 1080p (at 30 fps/60 fps) | Front Camera: 720p (at 30 fps), 1080p (at 30 fps)</p2>
-style="color:orange;font-size:13px">Digital Zoom  :  <p2 style="color:black">10X</p2>
-style="color:orange;font-size:13px">Frame Rate  :  <p2 style="color:black">120 fps, 60 fps, 30 fps</p2>
-style="color:orange;font-size:13px">Dual Camera Lens  :  <p2 style="color:black">Primary Camera</p2><br>
+<p style="color:orange;font-size:13px">HD Recording  :  <p2 style="color:black">Yes</p2></p>
+<p style="color:orange;font-size:13px">Full HD Recording  :  <p2 style="color:black">Yes</p2></p>
+<p style="color:orange;font-size:13px">Video Recording  :  <p2 style="color:black">Yes</p2></p>
+<p style="color:orange;font-size:13px">Video Recording Resolution  :  <p2 style="color:black">Rear Camera: 720p (at 30 fps/60 fps/ 120 fps), 1080p (at 30 fps/60 fps) | Front Camera: 720p (at 30 fps), 1080p (at 30 fps)</p2></p>
+<p style="color:orange;font-size:13px">Digital Zoom  :  <p2 style="color:black">10X</p2></p>
+<p style="color:orange;font-size:13px">Frame Rate  :  <p2 style="color:black">120 fps, 60 fps, 30 fps</p2></p>
+<p style="color:orange;font-size:13px">Dual Camera Lens  :  <p2 style="color:black">Primary Camera</p2></p><br>
 
 <p1 style="color:#58423D;font-size:14px">Call Features</p1>
 <p style="color:orange;font-size:13px">Network Type  :  <p2 style="color:black">2G, 3G, 4G</p2></p>
@@ -138,4 +137,25 @@ style="color:orange;font-size:13px">Dual Camera Lens  :  <p2 style="color:black"
 <p style="color:orange;font-size:13px">Domestic Warranty  :  <p2 style="color:black">1 Year</p2></p><br>
 
 <p style="color:grey;font-size:20px">Ratings And Feedback</p>
-<
+<div class="rating">
+  <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars"></label>
+  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars"></label>
+  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars"></label>
+  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars"></label>
+  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"></label>
+</div>
+
+<div class="comment-form">
+  <label for="username"></label><input type="text" id="username" placeholder="Username" required>
+  <br>
+  <label for="comment"></label><textarea id="comment" placeholder="Comment" rows="5" required></textarea>
+  <br>
+  <input type="submit" value="Submit" onclick="submitForm()">
+</div>
+<p style="color:Green;font-size:20px">Check Out The Users Ratings And Comments</p>
+<div id="feedback"></div>
+
+
+<script src="javascript.js"></script>
+
+</html>
