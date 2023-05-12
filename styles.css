@@ -1,0 +1,76 @@
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+.rectangle-box-dark {
+  border: 1px solid black;
+  padding: 2px;
+  display: inline-block;
+  margin-bottom: 1px;
+}
+.rectangle-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+.rectangle-box {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 5px;
+
+}
+.centered-text {
+  text-align: center;
+}
+.left-align {
+      float: left;
+}
+.word {
+      position: relative;
+      top: -10px;
+      left: 100px;
+    }
+.word-2 {
+      position: relative;
+      top: -10px;
+    }
+.word-3 {
+      position: relative;
+      top: -40px;
+    }
+    .shopping-button {
+      background-color: yellow;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      position: relative;
+            top: -20px;
+    }
+
+    .shopping-button i {
+      margin-right: 5px
+    }
