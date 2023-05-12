@@ -60,26 +60,7 @@ nav a:hover {
       position: relative;
       top: -40px;
     }
-    .shopping-button{
-                display: inline-block;
-                outline: 0;
-                border:0;
-                cursor: pointer;
-                text-decoration: none;
-                position: relative;
-                color: #000;
-                background: #fff;
-                line-height: 10px;
-                border-radius: 40px;
-                padding: 20px;
-                font-size: 20px;
-                font-weight: 600;
-                box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
-                transition: all 0.2s;
-                :hover{
-                    box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
-                    transform: scale(1.01);
-                }
+
 .rating {
   display: flex;
   flex-direction: row;
@@ -177,8 +158,23 @@ nav a:hover {
 .rating label:before {
   content: "\2605";
 }
-
-.rating label:hover,
-.rating input:checked ~ label,
-.rating input:checked ~ label ~ label
-
+.shopping-button{
+  display: inline-block;
+  outline: 0;
+  border:0;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  background: #fff;
+  line-height: 10px;
+  border-radius: 40px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transition: all 0.2s;
+  :hover{
+  box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transform: scale(1.01);
+}
