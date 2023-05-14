@@ -17,18 +17,25 @@
         </ul>
         </div>
     </nav>
-</header>
-<header>
-    <!--Header Name And Catchy Sentence -->
-    <h1 style="color:Yellow;text-align: center"> SwiftBuy</h1>
-    <p style="text-align: center">Ignite Your Imagination with Game-Changing Gadgets for Every Adventure!</p>
+    <!--if you need Header Name And Sentence without the video,add this
+     <h1 style="color:Yellow;text-align: center;font-size:50px"><br><br><br> SwiftBuy</h1>
+        <p style="color:orange;text-align: center;font-size:30px">Ignite Your Imagination with Game-Changing Gadgets for Every Adventure!</p>
+
+        then remove the below div to remove the video and remove video-container and video container video in css file
+        -->
+
+    <div class="video-container">
+        <video width="100%" height="100%" autoplay loop muted>
+            <source src="resources/cyberpunk.mp4" type="video/mp4"> <!-- Replace with your video file path -->
+        </video>
+    </div>
 </header>
 
 <section id="top-sellings">
     <h2 style="color:Blue;">Recommended Items</h2>
     <p style="color:Green">Based On Top Selling Products</p>
     <!--Shows Small Info Of Laptop -->
-    <div class="rectangle-box">
+    <div class="rectangle-box2">
         <img src="resources/asusicon.webp" class="left-align" height="100" width="150" alt="Asus Vivobook 15"/>
         <h3><ul style="list-style-type: none; padding: 0;">
             <li><a href='asuslaptop.html'>ASUS Vivobook 15 Core i3 11th Gen</a></li>
@@ -57,7 +64,7 @@
         </div>
     </div>
     <!--Shows Small Info Of Phone -->
-    <div class="rectangle-box">
+    <div class="rectangle-box2">
         <img src="resources/realmeicon.jpg" class="left-align" height="150" width="120" alt="Realme C55"/>
         <h3><ul style="list-style-type: none; padding: 0;">
             <li><a href='realmec55.html'>Realme C55 (Rainy Night,8GB/128GB)</a></li>
