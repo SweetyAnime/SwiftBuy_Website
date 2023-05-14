@@ -121,7 +121,7 @@
 <p style="color:orange;font-size:13px">Not Covered in Warranty  :  <p2 style="color:black">Physical Damage</p2></p>
 <p style="color:orange;font-size:13px">Domestic Warranty  :  <p2 style="color:black">1 Year</p2></p>
 
-<p style="color:grey;font-size:20px">Ratings And Feedback</p>
+<p class="section-title">Ratings And Feedback</p>
 <div class="rating">
     <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars"></label>
     <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars"></label>
@@ -131,16 +131,13 @@
 </div>
 
 <div class="comment-form">
-    <label for="username"></label><input type="text" id="username" placeholder="Username" required>
+    <label for="username">Username:</label><input type="text" id="username" placeholder="Username" required>
     <br>
-    <label for="comment"></label><textarea id="comment" placeholder="Comment" rows="5" required></textarea>
+    <label for="comment">Comment:</label><textarea id="comment" placeholder="Comment" rows="5" required></textarea>
     <br>
     <input type="submit" value="Submit" onclick="submitForm()">
 </div>
-<p style="color:Green;font-size:20px">Check Out The Users Ratings And Comments</p>
+<p class="section-title">Check Out The Users Ratings And Comments</p>
 <div id="feedback"></div>
-
-
-<script src="javascript.js"></script>
 
 </html>
