@@ -50,15 +50,21 @@ nav a:hover {
 .word {
       position: relative;
       top: -10px;
-      left: 100px;
+      left: 150px;
+    }
+.word1 {
+      position: relative;
+      top: -10px;
     }
 .word-2 {
       position: relative;
       top: -10px;
+      left:10px;
     }
 .word-3 {
       position: relative;
       top: -40px;
+      left:10px;
     }
 
 .rating {
@@ -162,6 +168,7 @@ nav a:hover {
   display: inline-block;
   outline: 0;
   border:0;
+  left:10px;
   cursor: pointer;
   text-decoration: none;
   position: relative;
