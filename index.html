@@ -1,79 +1,74 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
-    <title>SwiftBuy</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <title>SwiftBuy</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="javascript.js"></script> <!-- JS in project root -->
 </head>
 <body>
-<header>
-    <!--Navigation Bar For Header -->
-    <nav style="text-align: center"> 
-        <div  class="rectangle-box">
+
+  <!-- Fullscreen Video -->
+  <div class="video-hero"> <video autoplay muted loop playsinline id="bg-video"> 
+    <source src="assets/images/cyberpunk.mp4" type="video/mp4"> Your browser does not support the video tag. 
+  </video> </div>
+
+  <!-- Navigation overlay shown after delay -->
+  <div id="overlay-nav" class="overlay-content" style="display: none;">
+    <nav class="nav-bar">
+      <div class="rectangle-box">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-        </div>
+      </div>
     </nav>
-    
-    <div class="video-container">
-  <video autoplay muted loop playsinline>
-    <source src="assets/images/cyberpunk.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+  </div>
 
-</header>
-
-<section id="top-sellings">
-  <div class="centered-text">
-    <div style="text-align: center;">
-  <h2 class="recommended-heading">Recommended Items</h2>
-  <p style="color: #1e8449; font-size: 16px;">Based On Top Selling Products</p>
-</div>
-    </div>
-
-    <!--Shows Small Info Of Laptop -->
-    <div class="rectangle-box2">
-  <div class="product-flex">
-    <div class="product-image-box">
-      <img src="assets/images/asusicon.webp" alt="Asus Vivobook 15" />
-    </div>
-
-    <div class="product-details">
-      <h3><a href="asuslaptop.html">ASUS Vivobook 15 Core i3 11th Gen</a></h3>
-
-      <div class="rating">
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star-half">&#9734;</span>
+  <!-- Main content shown after delay -->
+  <div id="main-content" style="display: none;">
+    <section id="top-sellings">
+      <div class="centered-text">
+        <h2 class="recommended-heading">Recommended Items</h2>
+        <p style="color: #1e8449;">Based On Top Selling Products</p>
       </div>
 
-      <p class="word">1,349 ratings</p>
-      <p class="word"><s>&#8377 50,990</s> <b>&#8377 38,990</b></p>
+      <!-- Sample product -->
+      <div class="rectangle-box2">
+        <div class="product-flex">
+          <div class="product-image-box">
+            <img src="assets/images/asusicon.webp" alt="Asus Vivobook 15" />
+          </div>
+          <div class="product-details">
+            <h3><a href="asuslaptop.html">ASUS Vivobook 15 Core i3 11th Gen</a></h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star-half">&#9734;</span>
+            </div>
+            <p class="word">1,349 ratings</p>
+            <p class="word"><s>₹50,990</s> <b>₹38,990</b></p>
+            <div class="rectangle-box-dark">39.62cm (15.6 inch) Full HD Display</div>
+            <div class="rectangle-box-dark">8GB/512GB SSD/Windows 11 Home</div>
+            <div class="rectangle-box-dark">Microsoft Office</div>
+            <div class="rectangle-box-dark">Intel Core i3 11th Gen</div>
 
-      <div class="rectangle-box-dark">39.62cm (15.6 inch) Full HD Display</div>
-      <div class="rectangle-box-dark">8GB/512GB SSD/Windows 11 Home</div>
-      <div class="rectangle-box-dark">Microsoft Office</div>
-      <div class="rectangle-box-dark">Intel Core i3 11th Gen</div>
-    </div>
-  </div>
-</div>
+          </div>
+        </div>
+      </div>
 
-    <!--Shows Small Info Of Phone -->
-   <div class="rectangle-box2">
+
+      <div class="rectangle-box2">
   <div class="product-flex">
     <div class="product-image-box">
       <img src="assets/images/realmeicon.jpg" alt="Realme C55" />
     </div>
-
     <div class="product-details">
       <h3><a href="realmec55.html">Realme C55 (Rainy Night, 8GB/128GB)</a></h3>
-
       <div class="rating">
         <span class="star">&#9733;</span>
         <span class="star">&#9733;</span>
@@ -81,10 +76,8 @@
         <span class="star">&#9733;</span>
         <span class="star-half">&#9734;</span>
       </div>
-
       <p class="word">1,349 ratings</p>
-      <p class="word"><s>&#8377 15,999</s> <b>&#8377 13,999</b></p>
-
+      <p class="word"><s>₹15,999</s> <b>₹13,999</b></p>
       <div class="rectangle-box-dark">8 GB RAM | 128GB ROM | Expandable Upto 1 TB</div>
       <div class="rectangle-box-dark">17.07cm (6.72 inch) Full HD+ Display</div>
       <div class="rectangle-box-dark">64MP + 2MP | 8MP Front Camera</div>
@@ -94,11 +87,8 @@
   </div>
 </div>
 
-    <!-- Add more products here. -->
-</section>
+    </section>
+  </div>
 
-<footer>
-    <p>&copy; 2025 SwiftBuy Private Ltd. This Is Demo Website.</p>
-</footer>
 </body>
 </html>
