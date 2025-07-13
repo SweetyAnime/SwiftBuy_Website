@@ -8,27 +8,56 @@
 </head>
 <body>
 
+  <!-- Fixed Header Elements -->
+  <div class="header-fixed">
+    <!-- Horizontal line at x=0, y=43 -->
+    <div class="horizontal-line-43"></div>
+
+    <!-- Horizontal line at x=0, y=117 -->
+    <div class="horizontal-line-117"></div>
+
+    <!-- SwiftBuy text -->
+    <div class="swiftbuy-text">SwiftBuy</div>
+
+    <!-- Search bar -->
+    <div class="search-container">
+      <div class="category-dropdown">
+        <span class="category-text">All Category</span>
+        <div class="dropdown-arrow">▼</div>
+        <div class="dropdown-menu">
+          <div class="dropdown-item">Smartphones</div>
+          <div class="dropdown-item">Laptops</div>
+          <div class="dropdown-item">Tablets</div>
+          <div class="dropdown-item">Smartwatch</div>
+          <div class="dropdown-item">Headphones</div>
+          <div class="dropdown-item">Accessories</div>
+        </div>
+      </div>
+      <div class="search-divider"></div>
+      <div class="search-input-container">
+        <input type="text" class="search-input" placeholder="Search product or brand here">
+        <div class="search-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <path d="M42 42L33.3 33.3M38 22C38 30.8366 30.8366 38 22 38C13.1634 38 6 30.8366 6 22C6 13.1634 13.1634 6 22 6C30.8366 6 38 13.1634 38 22Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Fullscreen Video -->
   <div class="video-hero"> <video autoplay muted loop playsinline id="bg-video"> 
     <source src="assets/images/cyberpunk.mp4" type="video/mp4"> Your browser does not support the video tag. 
   </video> </div>
 
-  <!-- Navigation overlay shown after delay -->
-  <div id="overlay-nav" class="overlay-content" style="display: none;">
-    <nav class="nav-bar">
-      <div class="rectangle-box">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-
   <!-- Main content shown after delay -->
   <div id="main-content" style="display: none;">
+    
+    <!-- Banner Image -->
+    <div class="banner-container">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_632_webp/ba082b144831311.6293af8f7a9d8.png" alt="Banner" class="banner-image">
+    </div>
+
     <section id="top-sellings">
       <div class="centered-text">
         <h2 class="recommended-heading">Recommended Items</h2>

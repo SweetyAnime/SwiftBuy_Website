@@ -1,3 +1,6 @@
+/* Import Caesar Dressing font */
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
 /* Reset & Base */
 body, html {
 margin: 0;
@@ -5,6 +8,246 @@ padding: 0;
 overflow-x: hidden;
 font-family: sans-serif;
 background-color: #fff;
+}
+
+/* Main content with padding to avoid fixed header */
+#main-content {
+  padding-top: 140px; /* Space for fixed header */
+}
+
+/* Fixed Header Container */
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px; /* Enough height to contain all header elements */
+  background: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Glass effect */
+  z-index: 1000; /* Ensure it stays on top */
+  display: none; /* Hidden initially, will be shown by JavaScript */
+}
+
+/* Horizontal line at y=43 */
+.horizontal-line-43 {
+  position: absolute;
+  top: 43px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  z-index: 1001;
+}
+
+/* Horizontal line at y=117 */
+.horizontal-line-117 {
+  position: absolute;
+  top: 117px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  z-index: 1001;
+}
+
+/* SwiftBuy text */
+.swiftbuy-text {
+  position: absolute;
+  top: 63px;
+  left: 50px;
+  font-family: 'Caesar Dressing', cursive;
+  font-size: 32px;
+  font-weight: 400;
+  color: #1e1e1e;
+  z-index: 1002;
+}
+
+/* Search bar container */
+.search-container {
+  position: absolute;
+  top: 58px;
+  right: 50px;
+  width: 600px;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  display: flex;
+  z-index: 1002;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Inner container to handle overflow */
+.search-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Category dropdown section */
+.category-dropdown {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  user-select: none;
+  border-radius: 18px 0 0 18px;
+  border-right: 2px solid #e0e0e0;
+}
+
+.category-text {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.dropdown-arrow {
+  font-size: 12px;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+.category-dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: -2px;
+  width: calc(100% + 4px);
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 100;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 12px 15px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+/* Search divider */
+.search-divider {
+  float: left;
+  width: 2px;
+  height: 100%;
+  background-color: #e0e0e0;
+}
+
+/* Search input section */
+.search-input-container {
+  float: left;
+  width: calc(100% - 204px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 0 18px 18px 0;
+  background-color: #fff;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  background: transparent;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+/* Modern search icon */
+.search-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  transition: opacity 0.3s ease;
+}
+
+.search-icon:hover {
+  opacity: 0.7;
+}
+
+.search-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.search-icon svg path {
+  stroke: #666;
+  transition: stroke 0.3s ease;
+}
+
+.search-icon:hover svg path {
+  stroke: #007bff;
+}
+
+/* Banner Image */
+.banner-container {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1420px;
+  height: 440px;
+  flex-shrink: 0;
+  display: block;
+  z-index: 1;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 /* Fullscreen Video Section */
@@ -80,7 +323,8 @@ color: #ffcc00;
   position: relative;
   z-index: 1;
   background-color: white;
-  padding-top: 100vh; /* Ensures scroll starts after video */
+  padding-top: 140px;
+  margin-top: 0;
 }
 
 
@@ -106,7 +350,7 @@ margin: 20px 0 10px;
 
 .centered-text {
 text-align: center;
-margin-top: 40px;
+margin-top: 60px;
 }
 
 /* Product Card Styles */
