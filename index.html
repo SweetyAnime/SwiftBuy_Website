@@ -53,9 +53,48 @@
   <!-- Main content shown after delay -->
   <div id="main-content" style="display: none;">
     
-    <!-- Banner Image -->
-    <div class="banner-container">
-      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_632_webp/ba082b144831311.6293af8f7a9d8.png" alt="Banner" class="banner-image">
+    <!-- Banner Carousel -->
+    <div class="banner-carousel">
+      <div class="banner-container">
+        <div class="banner-slides">
+          <div class="banner-slide active">
+            <img src="https://cdn.shopify.com/s/files/1/0137/0292/2286/files/dynamite_web.jpg?v=1666182591" alt="Dynamite Banner" class="banner-image">
+          </div>
+          <div class="banner-slide">
+            <img src="https://images.samsung.com/is/image/samsung/assets/in/smartphones/galaxy-a36/buy/25083_Galaxy-A36-5G_Banner_720x480psd.jpg" alt="Samsung Galaxy A36" class="banner-image">
+          </div>
+          <div class="banner-slide">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/0ce90951-c10b-4835-ab4a-e05ddf7f4e96.__CR0,0,1200,900_PT0_SX600_V1___.jpg" alt="Amazon Banner" class="banner-image">
+          </div>
+          <div class="banner-slide">
+            <img src="https://i.ytimg.com/vi/WKdotkKJQYQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB6uEAKyU6giZwROtKJF6Bn3WamyQ" alt="Tech Banner" class="banner-image">
+          </div>
+          <div class="banner-slide">
+            <img src="https://cdn.neowin.com/news/images/uploaded/2015/09/screen_shot_2015-09-04_at_4.54.03_pm.jpg" alt="Microsoft Banner" class="banner-image">
+          </div>
+        </div>
+        
+        <!-- Navigation Arrows -->
+        <button class="banner-arrow banner-arrow-left" onclick="previousSlide()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="banner-arrow banner-arrow-right" onclick="nextSlide()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        
+        <!-- Dot Indicators -->
+        <div class="banner-dots">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
     </div>
 
     <section id="top-sellings">
