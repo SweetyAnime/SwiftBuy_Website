@@ -10,15 +10,85 @@ font-family: sans-serif;
 background-color: #fff;
 }
 
+/* Top Navigation Bar */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 1100;
+  display: none; /* Hidden initially, will be shown by JavaScript */
+}
+
+.top-nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.top-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-nav-item {
+  text-decoration: none;
+  color: #666;
+  font-size: 13px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  padding: 8px 6px;
+  border-radius: 4px;
+}
+
+.top-nav-item:hover {
+  color: #333;
+  background-color: #e9ecef;
+}
+
+.top-nav-item.sign-up {
+  color: #007bff;
+  font-weight: 500;
+}
+
+.top-nav-item.login {
+  color: #333;
+  font-weight: 500;
+}
+
+.top-nav-item.sign-up:hover {
+  background-color: #e3f2fd;
+}
+
+.top-nav-item.login:hover {
+  background-color: #e9ecef;
+}
+
+/* Vertical separator before Sign Up and Login */
+.nav-separator {
+  width: 1px;
+  height: 20px;
+  background-color: #ddd;
+  margin: 0 8px;
+}
+
 /* Main content with padding to avoid fixed header */
 #main-content {
-  padding-top: 140px; /* Space for fixed header */
+  padding-top: 180px; /* Space for fixed header + top nav */
 }
 
 /* Fixed Header Container */
 .header-fixed {
   position: fixed;
-  top: 0;
+  top: 40px; /* Position below top nav */
   left: 0;
   width: 100%;
   height: 140px; /* Enough height to contain all header elements */

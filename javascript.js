@@ -12,6 +12,10 @@ window.addEventListener("load", () => {
     const headerFixed = document.querySelector(".header-fixed");
     headerFixed.style.display = "block";
 
+    // Show top navigation bar
+    const topNav = document.querySelector(".top-nav");
+    topNav.style.display = "block";
+
     // Initialize dropdown functionality
     initializeDropdown();
     
